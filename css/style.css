@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  background-color: #230b0b;
+  color: #f7e3e9;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  padding: 0px 32px;
+  position: fixed;
+  flex-wrap: wrap;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
+nav > div:first-child {
+  gap: 20px;
+}
+
+nav >:last-child {
+  gap: 32px;
+}
+
+#search {
+padding: 0 35px 2px 10px;
+width: 342px;
+height: 38px;
+background-color: #ffffff1A;
+}
+
+#headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#globoyh {
+  height: 180px;
+  width: 975px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  border-radius: 1px;
+  border: 1px;
+  padding-top: 52px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 232px;
+  height: 232px;
+  background-color: gray;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  margin: 32px 85px;
+  justify-content: center;
+}
+
+sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* EVERYTHING IS BROKEN AHHHH!!!!...I forgot to make a respository AHHH!!! */
